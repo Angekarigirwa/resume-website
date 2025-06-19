@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ange Karigirwa</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <h1>Hello, I'm <span class="highlight">Ange</span></h1>
-        <p>Software Engineering Student | Creative Technologist</p>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ange Karigirwa</title>
+  <!-- CSS links -->
+  <link rel="stylesheet" href="src/libs/normalize.css" />
+  <link rel="stylesheet" href="src/css/setup.css" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/animations.css" />
+  <link rel="stylesheet" href="src/css/media-queries.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header show-on-scroll">
+    <div class="heading">
+      <h1 class="intro">Hi, I'm Ange</h1>
+      <p class="lead">I'm a web developer & creative technologist</p>
+      <p><a id="header-btn" class="header-btn" href="#contact">Contact Me</a></p>
+    </div>
+  </header>
 
-    <section class="social-section">
-      <h2>Connect with Me</h2>
-      <div class="social-icons">
-        <a href="https://github.com/Angekarigirwa" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:a.karigirwa@alustudent.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://instagram.com/angekarigirwaa" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </section>
-  </body>
+  <!-- About Section -->
+  <section id="about" class="dark-bg">
+    <div class="about-summary">
+      <h2 class="white-text">About</h2>
+      <p>
+        I’m a software engineering student from <strong>Rwanda</strong> at African Leadership University, passionate about designing digital solutions that create real-world impact.
+      </p>
+      <p>
+        My journey blends software development, design, and innovation. I enjoy coding in <strong>Python</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>C++</strong>, and building creative visuals as a graphic designer.
+      </p>
+      <p>
+        I’m deeply invested in youth empowerment and using technology to foster digital transformation in Africa. Let’s build the future together.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Connect With Me</h2>
+    <ul>
+      <li>Email: <a href="mailto:a.karigirwa@alustudent.com">a.karigirwa@alustudent.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">Ange Karigirwa</a></li>
+      <li>GitHub: <a href="https://github.com/Angekarigirwa" target="_blank">github.com/Angekarigirwa</a></li>
+      <li>Instagram: <a href="https://instagram.com/angekarigirwaa" target="_blank">@angekarigirwaa</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Ange Karigirwa. All rights reserved.</p>
+  </footer>
+</body>
 </html>
 

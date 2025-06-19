@@ -1,43 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ange Karigirwa</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <h1>Hello, I'm <span class="highlight">Ange</span></h1>
-        <p>Software Engineering Student | Creative Technologist</p>
-      </div>
-    </header>
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #005f73;
+  color: #fff;
+  padding: 1em 2em;
+}
+.nav-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+}
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #005f73;
+}
+.social-links a {
+  margin-right: 1em;
+  color: #0a9396;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-info {
+  margin-top: 1em;
+  color: #005f73;
+  font-size: 1.1em;
+}
+section {
+  margin: 2em 0;
+}
+h1, h2, h3 {
+  color: #005f73;
+}
+ul {
+  margin-left: 1.5em;
+}
+.project-card {
+  background: #e0fbfc;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button[type="submit"] {
+  background: #005f73;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.2em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #0a9396;
+}
+footer {
+  text-align: center;
+  margin: 2em 0 0 0;
+  padding: 1em 0;
+  color: #888;
+}
 
-    <section class="social-section">
-      <h2>Connect with Me</h2>
-      <div class="social-icons">
-        <a href="https://github.com/Angekarigirwa" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:a.karigirwa@alustudent.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://instagram.com/angekarigirwaa" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </section>
-  </body>
-</html>
+/* Responsive styles */
+@media (max-width: 900px) {
+  main { padding: 0.5em; }
+  .about-section { flex-direction: column; gap: 1em; }
+  .navbar { flex-direction: column; align-items: flex-start; }
+  .nav-links { flex-direction: column; width: 100%; display: none; }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+}
+@media (max-width: 700px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.3em; }
+}
+@media (max-width: 500px) {
+  main { padding: 0.2em; }
+  .navbar { padding: 0.5em 1em; }
+  .nav-brand { font-size: 1.1em; }
+}
    

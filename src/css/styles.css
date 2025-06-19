@@ -1,48 +1,43 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #ffeef2; /* soft pink background */
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ange Karigirwa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1>Hello, I'm <span class="highlight">Ange</span></h1>
+        <p>Software Engineering Student | Creative Technologist</p>
+      </div>
+    </header>
 
-.main-header {
-  background-color: #ffc0cb; /* soft pink */
-  text-align: center;
-  padding: 100px 20px;
-  color: #880e4f;
-}
-
-.main-header .highlight {
-  color: #c2185b;
-}
-
-.main-header p {
-  font-size: 1.5rem;
-  color: #6d214f;
-}
-
-.social-section {
-  min-height: 60vh;
-  background-color: #ffccda;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.social-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #880e4f;
-}
-
-.social-icons a {
-  margin: 0 15px;
-  font-size: 2.5rem;
-  color: #6d214f;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #c2185b;
-}
+    <section class="social-section">
+      <h2>Connect with Me</h2>
+      <div class="social-icons">
+        <a href="https://github.com/Angekarigirwa" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:a.karigirwa@alustudent.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://instagram.com/angekarigirwaa" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
    

@@ -1,59 +1,139 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Ange Karigirwa</title>
-  <!-- CSS links -->
-  <link rel="stylesheet" href="src/libs/normalize.css" />
-  <link rel="stylesheet" href="src/css/setup.css" />
-  <link rel="stylesheet" href="src/css/styles.css" />
-  <link rel="stylesheet" href="src/css/animations.css" />
-  <link rel="stylesheet" href="src/css/media-queries.css" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-</head>
-<body>
-  <!-- Header Section -->
-  <header class="header show-on-scroll">
-    <div class="heading">
-      <h1 class="intro">Hi, I'm Ange</h1>
-      <p class="lead">I'm a web developer & creative technologist</p>
-      <p><a id="header-btn" class="header-btn" href="#contact">Contact Me</a></p>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ange Karigirwa</title>
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p6DUkG4FhfnS1HO0R8q+M9kH+1td1R9Rfdy6vN2mBvFhi9x0JcgAmQeIkZR7dWB8F7V4mF0CzFtzqS+Hg3j3DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <h1>Hello, I'm <span class="highlight">Ange</span></h1>
+        <p>Tech Innovator | Digital Solutions Engineer</p>
+      </div>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="dark-bg">
-    <div class="about-summary">
-      <h2 class="white-text">About</h2>
-      <p>
-        I’m a software engineering student from <strong>Rwanda</strong> at African Leadership University, passionate about designing digital solutions that create real-world impact.
-      </p>
-      <p>
-        My journey blends software development, design, and innovation. I enjoy coding in <strong>Python</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>C++</strong>, and building creative visuals as a graphic designer.
-      </p>
-      <p>
-        I’m deeply invested in youth empowerment and using technology to foster digital transformation in Africa. Let’s build the future together.
-      </p>
-    </div>
-  </section>
+```
+<section class="about-section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm Ange Karigirwa, a Software Engineering student at the African Leadership University with a passion for solving real-world problems through inclusive and innovative tech. I focus on building accessible digital tools that empower youth and communities across Africa.
+    </p>
+  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Connect With Me</h2>
-    <ul>
-      <li>Email: <a href="mailto:a.karigirwa@alustudent.com">a.karigirwa@alustudent.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">Ange Karigirwa</a></li>
-      <li>GitHub: <a href="https://github.com/Angekarigirwa" target="_blank">github.com/Angekarigirwa</a></li>
-      <li>Instagram: <a href="https://instagram.com/angekarigirwaa" target="_blank">@angekarigirwaa</a></li>
-    </ul>
-  </section>
+<section class="social-section">
+  <h2>Connect with Me</h2>
+  <div class="social-icons">
+    <a href="https://github.com/Angekarigirwa" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:a.karigirwa@alustudent.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://instagram.com/angekarigirwaa" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Ange Karigirwa. All rights reserved.</p>
-  </footer>
-</body>
+<footer>
+  <p>© 2025 Ange Karigirwa. Crafted with purpose and pink power 🌸</p>
+</footer>
+```
+
+  </body>
 </html>
+
+/\* styles.css \*/
+body {
+margin: 0;
+padding: 0;
+font-family: "Montserrat", sans-serif;
+background-color: #ffeef2;
+color: #333;
+}
+
+.main-header {
+background-color: #ffc0cb;
+text-align: center;
+padding: 100px 20px;
+color: #880e4f;
+}
+
+.main-header .highlight {
+color: #c2185b;
+}
+
+.main-header p {
+font-size: 1.5rem;
+color: #6d214f;
+}
+
+.about-section {
+background-color: #fff0f5;
+padding: 80px 20px;
+text-align: center;
+}
+
+.about-section h2 {
+font-size: 2.5rem;
+color: #880e4f;
+margin-bottom: 20px;
+}
+
+.about-section p {
+max-width: 700px;
+margin: 0 auto;
+font-size: 1.2rem;
+color: #4a004d;
+}
+
+.social-section {
+min-height: 60vh;
+background-color: #ffccda;
+text-align: center;
+padding: 80px 20px;
+}
+
+.social-section h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+color: #880e4f;
+}
+
+.social-icons a {
+margin: 0 15px;
+font-size: 2.5rem;
+color: #6d214f;
+transition: color 0.3s ease;
+}
+
+.social-icons a\:hover {
+color: #c2185b;
+}
+
+footer {
+background-color: #ffe4ec;
+text-align: center;
+padding: 20px;
+color: #6d214f;
+font-size: 1rem;
+}
 

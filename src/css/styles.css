@@ -6,7 +6,6 @@ body {
   background: #fff0f6;
   color: #3d2247;
 }
-
 header {
   background: linear-gradient(90deg, #f8bbd0 0%, #e1bee7 100%);
   box-shadow: 0 2px 8px rgba(61,34,71,0.05);
@@ -14,7 +13,6 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -57,7 +55,6 @@ nav {
   background: #ad1457;
   border-radius: 2px;
 }
-
 main {
   max-width: 900px;
   margin: 2em auto;
@@ -104,20 +101,34 @@ main {
   color: #ad1457;
   font-weight: 600;
 }
-.skills-list, .interests-list {
+.skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   list-style: none;
   padding: 0;
 }
-.skills-list li, .interests-list li {
+.skills-list li {
   background: #f8bbd0;
   color: #6a1b9a;
   padding: 0.5em 1em;
   border-radius: 20px;
   font-size: 1em;
   margin-bottom: 0.5em;
+}
+.social-links {
+  margin-top: 1.5em;
+  text-align: center;
+}
+.social-links a {
+  color: #ad1457;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5em;
+  transition: color 0.2s;
+}
+.social-links a:hover {
+  color: #6a1b9a;
 }
 form {
   display: flex;
@@ -170,8 +181,6 @@ footer {
   border-radius: 0 0 16px 16px;
   margin-top: 2em;
 }
-
-/* Responsive Styles */
 @media (max-width: 900px) {
   main {
     max-width: 98vw;
@@ -208,7 +217,7 @@ footer {
     flex-direction: column;
     gap: 0.5em;
   }
-  .skills-list, .interests-list {
+  .skills-list {
     flex-direction: column;
     gap: 0.5em;
   }
@@ -226,4 +235,4 @@ footer {
   .edu-item, .exp-item, .vol-item, .proj-item, form {
     padding: 0.7em;
   }
-} 
+}  

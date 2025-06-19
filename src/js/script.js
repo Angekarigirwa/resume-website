@@ -1,60 +1,44 @@
-// Scroll function from Donovan Hutchinson's Level Up Your CSS Animation Skills Udemy course
-// Detect request animation frame
-const scroll =
-    window.requestAnimationFrame ||
-    // IE Fallback
-    function (callback) {
-        window.setTimeout(callback, 1000 / 60);
-    };
-const elementsToShow = document.querySelectorAll(".show-on-scroll");
+// Responsive Navbar Toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-function loop() {
-    elementsToShow.forEach(function (element) {
-        if (isElementInViewport(element)) {
-            element.classList.add("is-visible");
-        } else {
-            element.classList.remove("is-visible");
-        }
-    });
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
 
-    scroll(loop);
-}
+// Close navbar on link click (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+  });
+});
 
-// Call the loop for the first time
-loop();
+// Contact Form Validation
+const contactForm = document.getElementById('contactForm');
+const formMsg = document.getElementById('formMsg');
 
-// Helper function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
-    // special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-    const rect = el.getBoundingClientRect();
-    return (
-        (rect.top <= 0 && rect.bottom >= 0) ||
-        (rect.bottom >=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.top <=
-                (window.innerHeight ||
-                    document.documentElement.clientHeight)) ||
-        (rect.top >= 0 &&
-            rect.bottom <=
-                (window.innerHeight || document.documentElement.clientHeight))
-    );
-}
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  // Get form values
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-// Smooth scroll function
-const headerBtn = document.getElementById("header-btn");
-const socialContact = document.getElementById("social-contact");
-const contactForm = document.getElementById("contact");
-
-function scrollToForm() {
-    contactForm.scrollIntoView({ behavior: "smooth" }); // Top
-}
-
-headerBtn.addEventListener("click", scrollToForm);
-socialContact.addEventListener("click", scrollToForm);
-
-// No bots!
-const contactFormNoBots = document.getElementById("contact-form-no-bots");
-contactFormNoBots.parentNode.removeChild(contactFormNoBots);
+  // Simple validation
+  if (!name || !email || !message) {
+    formMsg.textContent = 'Please fill in all fields.';
+    formMsg.style.color = '#ad1457';
+    return;
+  }
+  // Email format validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    formMsg.textContent = 'Please enter a valid email address.';
+    formMsg.style.color = '#ad1457';
+    return;
+  }
+  // Success message
+  formMsg.textContent = 'Thank you for your message!';
+  formMsg.style.color = '#6a1b9a';
+  contactForm.reset();
+}); 

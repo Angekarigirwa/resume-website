@@ -1,44 +1,24 @@
-// Responsive Navbar Toggle
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+// Responsive navbar toggle
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
 });
 
-// Close navbar on link click (mobile)
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
-});
-
-// Contact Form Validation for Ange Karigirwa's site
-const contactForm = document.getElementById('contactForm');
-const formMsg = document.getElementById('formMsg');
-
-contactForm.addEventListener('submit', function(e) {
+// Simple contact form validation and feedback
+document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  // Get form values
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
+  let error = '';
 
-  // Simple validation
-  if (!name || !email || !message) {
-    formMsg.textContent = 'Please fill in all fields.';
-    formMsg.style.color = '#ad1457';
-    return;
-  }
-  // Email format validation
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(email)) {
-    formMsg.textContent = 'Please enter a valid email address.';
-    formMsg.style.color = '#ad1457';
-    return;
-  }
-  // Success message
-  formMsg.textContent = 'Thank you for your message!';
-  formMsg.style.color = '#6a1b9a';
-  contactForm.reset();
-});  
+  if (!name) error += 'Name is required. ';
+  if (!email || !/\S+@\S+\.\S+/.test(email)) error += 'Valid email is required. ';
+  if (!message) error += 'Message cannot be empty. ';
+
+  const msgDiv = document.getElementById('formMessage');
+  msgDiv.style.color = error ? 'red' : 'green';
+  msgDiv.textContent = error ? error : 'Thank you for your message!';
+
+  if (!error) this.reset();
+});
+  

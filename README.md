@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Resume Website
 
 Welcome to my **Resume Website** repository! This is a personal portfolio website built using **HTML**, **CSS**, and **JavaScript**. It serves as an online resume to showcase my skills, projects, and professional experience.
@@ -19,3 +20,6 @@ Check out the live version of the website here:
 - **HTML**: For structuring the content of the website.
 - **CSS**: For styling and designing the layout.
 - **JavaScript**: For adding interactivity and dynamic features.
+=======
+
+>>>>>>> Updated Code Comments and Annotations

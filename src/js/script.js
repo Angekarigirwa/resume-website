@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Contact Form Validation
+// Contact Form Validation for Ange Karigirwa's site
 const contactForm = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 
@@ -41,4 +41,4 @@ contactForm.addEventListener('submit', function(e) {
   formMsg.textContent = 'Thank you for your message!';
   formMsg.style.color = '#6a1b9a';
   contactForm.reset();
-}); 
+});  

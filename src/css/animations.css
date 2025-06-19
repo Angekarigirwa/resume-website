@@ -1,83 +1,83 @@
-/*/////////////////////////////////
-// Animation Styles
-/////////////////////////////////*/
+/*==============================
+  Reveal & Transition Animations
+===============================*/
 
-/* Header */
+/* Header Fade-in */
 header {
     opacity: 0;
-    -webkit-transition: opacity 0.5s 0.25s ease-out;
-    transition: opacity 0.5s 0.25s ease-out;
+    -webkit-transition: opacity 0.6s 0.2s ease-in;
+    transition: opacity 0.6s 0.2s ease-in;
 }
 
-header.is-visible {
+header.visible-now {
     opacity: 1;
 }
 
 .main-photo {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
 }
 
 .heading {
-    -webkit-transform: translate(-50%, calc(-50% + 5em));
-    transform: translate(-50%, calc(-50% + 5em));
+    -webkit-transform: translate(-50%, calc(-50% + 4em));
+    transform: translate(-50%, calc(-50% + 4em));
 }
 
-.is-visible .main-photo {
-    -webkit-transform: none;
-    transform: none;
+.visible-now .main-photo {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
-.is-visible .heading {
+.visible-now .heading {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
 .main-photo,
 .heading {
-    -webkit-transition: -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    -webkit-transition: -webkit-transform 3.5s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
+    transition: -webkit-transform 3.5s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
+    transition: transform 3.5s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
+    transition: transform 3.5s 0.2s cubic-bezier(0.1, 1, 0.3, 1),
+        -webkit-transform 3.5s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
     will-change: transform;
 }
 
-/* Icons Grid List / Portfolio */
-
-.grid-list,
-.portfolio-img {
+/* Grid and Portfolio Animations */
+.icon-grid,
+.portfolio-visual {
     opacity: 0;
-    -webkit-transition: opacity 0.3s 0.25s ease-out,
-        -webkit-transform 1.5s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: opacity 0.3s 0.25s ease-out,
-        -webkit-transform 1.5s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: transform 1.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
-        opacity 0.3s 0.25s ease-out;
-    transition: transform 1.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
-        opacity 0.3s 0.25s ease-out,
-        -webkit-transform 1.5s 0.25s cubic-bezier(0, 1, 0.3, 1);
+    -webkit-transition: opacity 0.4s 0.2s ease-in,
+        -webkit-transform 1.2s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
+    transition: opacity 0.4s 0.2s ease-in,
+        -webkit-transform 1.2s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
+    transition: transform 1.2s 0.2s cubic-bezier(0.1, 1, 0.3, 1),
+        opacity 0.4s 0.2s ease-in;
+    transition: transform 1.2s 0.2s cubic-bezier(0.1, 1, 0.3, 1),
+        opacity 0.4s 0.2s ease-in,
+        -webkit-transform 1.2s 0.2s cubic-bezier(0.1, 1, 0.3, 1);
     will-change: transform, opacity;
 }
 
-.grid-list.slide-left {
-    -webkit-transform: translateX(-4em);
-    transform: translateX(-4em);
+.icon-grid.slide-from-left {
+    -webkit-transform: translateX(-3em);
+    transform: translateX(-3em);
 }
 
-.grid-list.slide-right {
-    -webkit-transform: translateX(4em);
-    transform: translateX(4em);
+.icon-grid.slide-from-right {
+    -webkit-transform: translateX(3em);
+    transform: translateX(3em);
 }
 
-.grid-list.is-visible {
+.icon-grid.visible-now {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
-.portfolio-img.is-visible {
+.portfolio-visual.visible-now {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
+

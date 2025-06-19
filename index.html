@@ -1,30 +1,116 @@
-<section id="social" class="dark-bg">
-  <div class="social-intro">
-    <h2 class="white-text">Social</h2>
-    <p>If you'd like to get in touch directly, use the contact form. Otherwise, find me here:</p>
-  </div>
-  <ul class="grid-list slide-left show-on-scroll">
-    <li>
-      <a href="https://github.com/Angekarigirwa" target="_blank">
-        <!-- GitHub SVG -->
-        <div class="svg-container">…</div>
-        <div class="svg-title-container">GitHub</div>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">
-        <!-- LinkedIn SVG -->
-        <div class="svg-container">…</div>
-        <div class="svg-title-container">LinkedIn</div>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/angekarigirwaa" target="_blank">
-        <!-- Instagram SVG -->
-        <div class="svg-container">…</div>
-        <div class="svg-title-container">Instagram</div>
-      </a>
-    </li>
-  </ul>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ange Karigirwa - Resume</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Ange Karigirwa</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <img src="images/profile.jpg" alt="Ange Karigirwa" class="profile-img"/>
+      <div>
+        <h1>Ange Karigirwa</h1>
+        <p>
+          I’m a student and aspiring software engineer based in Rwanda, currently pursuing a Bachelor’s degree in Software Engineering at African Leadership University (ALU). My academic journey has provided me with a strong foundation in programming, problem-solving, and innovative thinking, while also nurturing my passion for designing and creating.<br><br>
+          While studying software engineering, I’ve developed a keen interest in blending technical skills with creativity. As a graphic designer, I enjoy crafting visually appealing designs that communicate ideas effectively. My expertise extends to web design, where I build user-friendly and responsive websites using modern tools and frameworks. Additionally, I am passionate about content creation and cinematography, which allows me to tell compelling stories through multimedia platforms.<br><br>
+          On the technical side, I am proficient in various programming languages, including Python, JavaScript, HTML, CSS, and C++. I am always eager to learn new technologies and take on challenges that push the boundaries of what technology can achieve.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/angekarigirwa" target="_blank">GitHub</a>
+          <a href="https://instagram.com/angekarigirwaa" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-info">
+          <strong>Contact:</strong> 0783962378
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML5 &amp; CSS3</li>
+        <li>C++</li>
+        <li>Responsive Web Design</li>
+        <li>Graphic Design</li>
+        <li>Content Creation &amp; Cinematography</li>
+        <li>Problem Solving</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <article>
+        <h3>Software Developer Intern, XYZ Tech (2024-2025)</h3>
+        <ul>
+          <li>Developed mobile-first web apps for local businesses.</li>
+          <li>Worked in an Agile team to deliver client solutions.</li>
+        </ul>
+      </article>
+      <!-- Add more experience as needed -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>AgriConnect</h3>
+        <p>Connecting farmers to markets using real-time data and analytics.</p>
+      </div>
+      <div class="project-card">
+        <h3>Youth Innovators Hub</h3>
+        <p>Community portal for youth-led tech initiatives across Africa.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <p>BSc (Hons) Software Engineering, African Leadership University, 2023-2027</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ange Karigirwa. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
   

@@ -1,116 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ange Karigirwa - Resume</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-brand">Ange Karigirwa</div>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Ange Karigirwa</title>
+        <!-- Link to external CSS (optional) -->
+        <link rel="stylesheet" href="./src/libs/normalize.css" />
+        <link rel="stylesheet" href="./src/css/setup.css" />
+        <link rel="stylesheet" href="./src/css/styles.css" />
+        <link rel="stylesheet" href="./src/css/animations.css" />
+        <link rel="stylesheet" href="./src/css/media-queries.css" />
+    </head>
 
-  <main>
-    <!-- About Me Section -->
-    <section id="about" class="about-section">
-      <img src="images/profile.jpg" alt="Ange Karigirwa" class="profile-img"/>
-      <div>
-        <h1>Ange Karigirwa</h1>
-        <p>
-          I’m a student and aspiring software engineer based in Rwanda, currently pursuing a Bachelor’s degree in Software Engineering at African Leadership University (ALU). My academic journey has provided me with a strong foundation in programming, problem-solving, and innovative thinking, while also nurturing my passion for designing and creating.<br><br>
-          While studying software engineering, I’ve developed a keen interest in blending technical skills with creativity. As a graphic designer, I enjoy crafting visually appealing designs that communicate ideas effectively. My expertise extends to web design, where I build user-friendly and responsive websites using modern tools and frameworks. Additionally, I am passionate about content creation and cinematography, which allows me to tell compelling stories through multimedia platforms.<br><br>
-          On the technical side, I am proficient in various programming languages, including Python, JavaScript, HTML, CSS, and C++. I am always eager to learn new technologies and take on challenges that push the boundaries of what technology can achieve.
-        </p>
-        <div class="social-links">
-          <a href="https://github.com/angekarigirwa" target="_blank">GitHub</a>
-          <a href="https://instagram.com/angekarigirwaa" target="_blank">Instagram</a>
-          <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">LinkedIn</a>
-        </div>
-        <div class="contact-info">
-          <strong>Contact:</strong> 0783962378
-        </div>
-      </div>
-    </section>
+    <body>
+        <!-- Header Section -->
+        <header class="header show-on-scroll">
+            <div class="heading">
+                <h1 class="intro">Hi, my name is Ange Karigirwa</h1>
+                <p class="lead">
+                    I'm a Software Engineering student at African Leadership University, passionate about building accessible digital tools that empower youth and communities across Africa.
+                </p>
+                <p><a id="header-btn" class="header-btn">Contact Me</a></p>
+            </div>
+        </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>HTML5 &amp; CSS3</li>
-        <li>C++</li>
-        <li>Responsive Web Design</li>
-        <li>Graphic Design</li>
-        <li>Content Creation &amp; Cinematography</li>
-        <li>Problem Solving</li>
-        <li>Git &amp; GitHub</li>
-      </ul>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="dark-bg">
+            <div class="about-summary">
+                <h2 class="white-text">About</h2>
+                <p>
+                    I’m a student and aspiring software engineer based in <strong>Kigali, Rwanda</strong>, 
+                    currently pursuing a Bachelor’s degree in Software Engineering 
+                    at African Leadership University (ALU). My academic journey has 
+                    equipped me with a strong foundation in software development, problem-solving, and community engagement.
+                </p>
+                <p>
+                    My passion is for a mission of using technology in creating scalable, user-driven solutions that solve problems in the real world. My interests lie in innovation, empowerment of the youth, and developing Africa's digital future through inclusive and sustainable tech projects.
+                </p>
+                <p>
+                    I focus on building accessible digital tools that empower youth and communities across Africa. With a strong foundation in software development, problem-solving, and community engagement, I am committed to using my skills to create lasting, meaningful impact.
+                </p>
+                <p>
+                    <strong>Contact:</strong> Kigali, Rwanda | <a href="tel:+250783962378">+250 783 962 378</a> | <a href="mailto:angekarigirwa15@gmail.com">angekarigirwa15@gmail.com</a>
+                </p>
+            </div>
+       
+            <!-- Skills Section -->
+            <div class="about-skills">
+                <h3 class="white-text">Skills</h3>
+                <ul class="grid-list slide-left show-on-scroll">
+                    <li>
+                        <div class="about-svg-container">
+                            <!-- JavaScript Icon -->
+                            <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                        </div>
+                        <div class="svg-title-container">JavaScript</div>
+                    </li>
+                    <li>
+                        <div class="about-svg-container">
+                            <!-- HTML5 Icon -->
+                            <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080"><path d="m540 0c298.03 0 540 241.97 540 540s-241.97 540-540 540-540-241.97-540-540 241.97-540 540-540zm-233.59 254.64c-30.448 53.325-47.845 115.01-47.845 180.71 0 201.96 164.38 365.94 366.85 365.94 100.3 0 191.26-40.241 257.51-105.41-63.14 110.59-182.4 185.22-319 185.22-202.47 0-366.85-163.97-366.85-365.94 0-101.91 41.855-194.15 109.34-260.53zm173-58.2c-22.437 39.295-35.257 84.749-35.257 133.17 0 148.83 121.13 269.66 270.33 269.66 73.912 0 140.94-29.654 189.76-77.676-46.527 81.491-134.41 136.49-235.07 136.49-149.2 0-270.33-120.83-270.33-269.66 0-75.099 30.842-143.07 80.57-191.98zm147.95 0c-13.007 22.838-20.44 49.255-20.44 77.394 0 86.496 70.224 156.72 156.72 156.72 42.85 0 81.707-17.234 110.01-45.144-26.974 47.361-77.923 79.326-136.28 79.326-86.496 0-156.72-70.224-156.72-156.72 0-43.646 17.881-83.148 46.71-111.58z"/></svg>
+                        </div>
+                        <div class="svg-title-container">HTML5</div>
+                    </li>
+                    <li>
+                        <div class="about-svg-container">
+                            <!-- CSS3 Icon -->
+                            <svg class="svg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+                        </div>
+                        <div class="svg-title-container">CSS3</div>
+                    </li>
+                    <li>
+                        <div class="about-svg-container">
+                            <div class="svg-title-container">Microsoft Word, PowerPoint, Google Apps</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about-svg-container">
+                            <div class="svg-title-container">Management, Creativity, Negotiation, Critical Thinking, Leadership</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Software Developer Intern, XYZ Tech (2024-2025)</h3>
-        <ul>
-          <li>Developed mobile-first web apps for local businesses.</li>
-          <li>Worked in an Agile team to deliver client solutions.</li>
-        </ul>
-      </article>
-      <!-- Add more experience as needed -->
-    </section>
+            <!-- Programs Section -->
+            <div class="about-programs">
+                <h3 class="white-text">Programs</h3>
+                <ul class="grid-list slide-right show-on-scroll">
+                    <li>
+                        <div class="svg-title-container">Reflective Thinking</div>
+                    </li>
+                    <li>
+                        <div class="svg-title-container">E-LAB (Entrepreneurial Leadership Lab)</div>
+                    </li>
+                    <li>
+                        <div class="svg-title-container">Self-Directed Learning (SDL)</div>
+                    </li>
+                    <li>
+                        <div class="svg-title-container">Complex Problem Solving</div>
+                    </li>
+                    <li>
+                        <div class="svg-title-container">Stakeholder Exposure & Coaching Program</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>AgriConnect</h3>
-        <p>Connecting farmers to markets using real-time data and analytics.</p>
-      </div>
-      <div class="project-card">
-        <h3>Youth Innovators Hub</h3>
-        <p>Community portal for youth-led tech initiatives across Africa.</p>
-      </div>
-      <!-- Add more projects as needed -->
-    </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="portfolio-intro">
+                <h2>Portfolio</h2>
+                <p class="section-lead">
+                    This section will be coming soon. You can check out my accounts to see some of the projects I've worked on so far.
+                  <a href="https://github.com/angekarigirwa" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <!-- You can add images or project cards here in the future -->
+        </section>
 
-    <!-- Education Section -->
-    <section id="education">
-      <h2>Education</h2>
-      <p>BSc (Hons) Software Engineering, African Leadership University, 2023-2027</p>
-    </section>
+        <!-- Social Links Section -->
+        <section id="social" class="dark-bg">
+            <div class="social-intro">
+                <h2 class="white-text">Pages</h2>
+                <p class="section-lead">
+                    If you would like to contact me directly, you can use
+                  <a id="social-contact">the contact form</a> 
+                  below. If you prefer social media, you can find me through these icon links.
+                </p>
+            </div>
+            <div class="social-icons">
+                <ul class="grid-list slide-left show-on-scroll">
+                    <li>
+                        <a href="https://github.com/angekarigirwa" target="_blank">
+                            <div class="svg-title-container">GitHub</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ange-karigirwa-402525345" target="_blank">
+                            <div class="svg-title-container">LinkedIn</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/angekarigirwaa" target="_blank">
+                            <div class="svg-title-container">Instagram</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div id="formMessage"></div>
-    </section>
-  </main>
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-intro">
+                <h2>Contact</h2>
+                <p class="section-lead">
+                    Send me a message! Your email address will not be shared. Required fields are marked with a
+                  <span class="red-text">*</span>.
+                </p>
+            </div>
+            <form class="contact-form" method="POST" action="https://formspree.io/f/myzywdeq">
+                <fieldset id="contact-form-name">
+                    <label for="name">Name<span class="red-text">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Your Full Name" required />
+                </fieldset>
+                <fieldset id="contact-form-email">
+                    <label for="email">Email<span class="red-text">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required />
+                </fieldset>
+                <fieldset id="contact-form-no-bots">
+                    <label for="bots">Please leave this field blank.</label>
+                    <input type="text" name="bots" id="bots" placeholder="No bots allowed" />
+                </fieldset>
+                <fieldset id="contact-form-message">
+                    <label for="message">Message<span class="red-text">*</span></label>
+                    <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="18" required></textarea>
+                </fieldset>
+                <!-- reCAPTCHA -->
+                <fieldset id="contact-form-recaptcha">
+                    <div class="g-recaptcha" data-sitekey="6Lf5y3cqAAAAAOIFWQEvgNF88ftoBj6zhtSYAn78"></div>
+                </fieldset>
+                <button id="contact-form-submit" type="submit">
+                    Submit
+                </button>
+            </form>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Ange Karigirwa. All rights reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+        <!-- Footer Section -->
+        <footer>
+            <p>
+                <small id="copyright-text">&copy; Copyright Ange Karigirwa 2024</small>
+            </p>
+        </footer>
+
+        <script src="./src/js/script.js"></script>
+    </body>
 </html>
   
